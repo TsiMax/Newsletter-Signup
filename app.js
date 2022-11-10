@@ -1,5 +1,5 @@
+//const https = require("https");
 const express = require("express");
-const https = require("https");
 const bodyParser = require("body-parser");
 const request = require("request");
 const client = require("@mailchimp/mailchimp_marketing");
@@ -43,7 +43,7 @@ app.post("/", function(req, res) {
     res.sendFile(__dirname + "/failure.html");
   }
 
-    // console.log(response); // (optional)
+    // console.log(response);
 
 };
   run();
